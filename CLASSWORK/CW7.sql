@@ -1,0 +1,19 @@
+1. CREATE DATABASE GroceryShop;
+
+2. USE GroceryShop;
+
+3. CREATE TABLE PRODUCTS(
+    PRODUCT_ID INT(10) AUTO_INCREMENT PRIMARY KEY,
+    PRODUCT_NAME VARCHAR(255) ,
+    PRODUCT_PRICE DECIMAL(20));
+
+4. ALTER  TABLE products 
+   ADD CATEGORY VARCHAR(255);
+
+5. INSERT INTO products (PRODUCT_ID,PRODUCT_NAME,PRODUCT_PRICE,CATEGORY)
+    VALUES('1','Rice','55.50','Grains'),
+	      ('2','Sugar','45.00','Groceries'),
+	      ('3','Milk','30.00','Dairy');
+    DELETE FROM products;
+
+6. DROP TABLE products;
